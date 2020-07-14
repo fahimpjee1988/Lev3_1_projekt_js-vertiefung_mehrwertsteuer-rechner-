@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <div id="rechnen">
+            <p>Was soll berechnet werden?</p>
+            <div>
+            <input type="radio" name="mehrwert" id="netto" value="" checked>
+            <label for="netto">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+            <input type="radio" name="mehrwert" id="brutto" value="">
+            <label for="brutto">Mehrwertsteuer aufschlagen (Brutto zu Netto)</label>
+        </div>
+            <br>
+            <div>
+            <p>Mehrwertsteuersatz</p>
+            <input type="radio" name="prozent" id="neuzehn" value="19" checked>
+            <label for="19%">19%</label>
+
+            <input type="radio" name="prozent" id="sieben" value="7">
+            <label for="7%">7%</label>
+        </div>
+
+            <p>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro <span>*</span></p>
+            <input type="number" name="number" id="typein">
+
+            <input type="button" value="Berechnen" onclick="berechnen()">
+
+            <h4>Ergebniss</h4>
+
+            <p>Mehrwertsteuerbetrag</p>
+            <h4 Id="mehrwert"></h4>
+            <br>
+            <p>Bruttobetrag (Endpreis)</p>
+            <h4 Id="mehrwert2"></h4>
+
+            </div>
+    </section>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
